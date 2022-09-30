@@ -6,7 +6,6 @@
   --dark-grayish-blue: hsl(227, 10%, 46%);
   --dark-gray: hsl(0, 0%, 59%);
 
-  
   --fw-400: 400;
   --fw-700: 700;
 }
@@ -26,14 +25,14 @@ body {
 
 .bg-top {
   position: absolute;
-  top: -100%;
+  top: -80%;
   left: -20%;
   z-index: -1;
 }
 
 .bg-bottom {
   position: absolute;
-  bottom: -120%;
+  bottom: -90%;
   right: -20%;
   z-index: -1;
 }
@@ -124,4 +123,18 @@ span {
 .attribution a { 
   font-weight: 700;
   color: hsl(229, 23%, 13%); 
+}
+
+@media only screen and (max-width: 428px) {
+  .bg-top {
+    top: -100%;
+    left: -190%;
+    z-index: -1;
+  }
+  
+  .bg-bottom {
+    bottom: -100%;
+    right: -190%;
+    z-index: -1;
+  }
 }
