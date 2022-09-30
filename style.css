@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+
+  
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.125rem;
+  background-color: var(--dark-cyan);
+}
+
+.bg-top {
+  position: absolute;
+  top: -100%;
+  left: -20%;
+  z-index: -1;
+}
+
+.bg-bottom {
+  position: absolute;
+  bottom: -120%;
+  right: -20%;
+  z-index: -1;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0.9375rem;
+}
+
+.bg-card img{
+  border-radius: 0.9375rem 0.9375rem 0 0;
+  margin-bottom: 4.375rem;
+}
+
+.img-victor img{
+  position: absolute;
+  top: 5.3125rem;
+  left: 35%;
+  border-radius: 50%;
+  border: 0.3125rem solid #fff;
+}
+
+h1 {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+
+h2 {
+  color: var(--dark-gray);
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+hr{
+  border: 0.0225rem solid hsla(0, 0%, 59%, 0.192);
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+span {
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+
+.contents {
+  display: flex;
+  margin-bottom: 1.5625rem;
+}
+
+.contents p {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 3.125rem;
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.contents .reset-right {
+  margin-right: 0;
+}
+
+.contents p span {
+  letter-spacing: 0.1125rem;
+  font-size: 0.685rem;
+}
+
+.attribution { 
+  color: #fff;
+  font-size: 0.8125rem; 
+  text-align: center; 
+}
+.attribution a { 
+  font-weight: 700;
+  color: hsl(229, 23%, 13%); 
+}
